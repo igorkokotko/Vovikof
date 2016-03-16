@@ -11,3 +11,9 @@
 ul.nav.navbar-nav{
     float: right;
 }
+.name{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    color: rgb(102, 0, 102);
+}
