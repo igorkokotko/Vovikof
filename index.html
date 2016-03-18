@@ -10,23 +10,60 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-    <a class="loader" href="#content"><h1 class="name">Vovikof</h1><a>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Vovikof</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Головна</a></li>
-          <li><a href="#">Про мене</a></li>
-          <li><a href="#">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
-        </ul>
-      </div>
-    </nav>
-        <video autoplay loop muted poster="screenshot.jpg" id="background">
+    <script>
+        var allhiden=function(sect) {
+            document.getElementById('home').style.display ='none';
+            document.getElementById('profile').style.display ='none';
+            document.getElementById('portfolio').style.display ='none';
+            document.getElementById('contact').style.display ='none';
+            document.getElementById(sect).style.display ='block';
+        }
+    </script>
+    <a class="loader" href="#home"></a>
+    <div class="bs-example">
+        <nav role="navigation" class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Vovikof</a>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li onclick="allhiden('home')" class="active"><a href="#home">Home</a></li>
+                    <li onclick="allhiden('profile')"><a href="#profile">Profile</a></li>
+                    <li onclick="allhiden('portfolio')"><a href="#portfolio">Portfolio</a></li>
+                    <li onclick="allhiden('contact')"><a href="#contact">Contact</a></li>
+                </ul>
+                <form role="search" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+        <!--<video autoplay loop muted poster="screenshot.jpg" id="background">
             <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-        </video>
+        </video>-->
+    
+    <section id="home">
+    <div id="background"></div>
+    <div class="container">
+          <a href="//www.youtube.com/" target="_blank"><button type="button" class="btn btn-danger">Youtube</button></a>
+          <a href="//vk.com/vovikof" target="_blank"><button type="button" class="btn btn-info">Vkontakte</button></a>
+          <a href="//www.instagram.com/" target="_blank"><button type="button" class="btn btn-primary">Instagram</button></a>
+        </div>  
+    </section>
+    <section id="profile">
+       <h1 class="centered">profile</h1> 
+    </section>
+    <section id="portfolio"><h1 class="centered">portfolio</h1>
+    </section>
+    <section id="contact"><h1 class="centered">contact</h1></section>
     <script src="main.js"></script>
     </body>
 </html>

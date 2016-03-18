@@ -1,3 +1,6 @@
+#profile, #portfolio, #contact {
+    display:none;
+}
 .loader {
 	position: fixed;
 	left: 0px;
@@ -6,16 +9,7 @@
 	height: 100%;
 	z-index: 9999;
 	background-color: black;
-	background: url('images/loader.jpg') 50% 50% no-repeat rgb(249,249,249);
-}
-ul.nav.navbar-nav{
-    float: right;
-}
-.name{
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
-    color: rgb(102, 0, 102);
+	background: url('images/vovikof.jpg') 50% 50% ;
 }
 #background {
     position: fixed;
@@ -27,9 +21,19 @@ ul.nav.navbar-nav{
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
+    background: url(images/grass.jpg) no-repeat;
     background-size: cover;
 }
-.container h1 {
+h1.container{
     color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow:row wrap;
+    position: relative;
+    top:500px;
+}
+.centered{
+    text-align:center;
 }
