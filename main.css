@@ -1,7 +1,7 @@
 #profile, #portfolio, #contact {
     display:none;
 }
-.loader {
+.loadpage {
 	position: fixed;
 	left: 0px;
 	top: 0px;

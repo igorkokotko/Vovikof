@@ -5,8 +5,22 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="section.css">
+        <link rel="stylesheet" href="media.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+            	jQuery('.skillbar').each(function(){
+            		jQuery(this).find('.skillbar-bar').animate({
+            			width:jQuery(this).attr('data-percent')
+            		},6000);
+            	});
+            });
+        $( window ).load(function() {
+            console.log( "window loaded" );
+        });
+        </script>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
@@ -19,7 +33,7 @@
             document.getElementById(sect).style.display ='block';
         }
     </script>
-    <a class="loader" href="#home"></a>
+    <a class="loadpage" href="#home"></a>
     <div class="bs-example">
         <nav role="navigation" class="navbar navbar-default">
             <div class="navbar-header">
@@ -60,10 +74,142 @@
     </section>
     <section id="profile">
        <h1 class="centered">profile</h1> 
+       <div id="flex">
+           <div id="cf4">
+                <div class="imageholder">
+                <img src="images/vovik1.jpg" alt="myphoto">
+                <img src="images/vovik2.jpg" alt="myphoto">
+                <img src="images/vovik3.jpg" alt="myphoto">
+                <img src="images/vovik4.jpg" alt="myphoto">
+                </div>
+            </div>
+            <div class="about">
+                <p>Привіт!Мене звати Володимир Підлужний і я ведучий,конферансьє та сценарист<br>
+                ВЕСЕЛО?ОДНОЗНАЧНО!<br>
+                ІНТЕЛЕГЕНТНО?БЕЗУМОВНО!<br>
+                СТИЛЬНО?ЗВИЧАЙНО!<br>
+                Та головне НЕЗАБУТНЬО!Для того що б вирізнятися з поміж інших потрібна ізюминка тому в мому сценарії коктель емоцій:LED відео флешмоб,instabox флешмоб та photowall show!
+                </p>
+            </div>
+        </div>
+<div class="skills">
+<div id="flexbox">
+<div class="text1">Харизма</div>
+<div class="loader">
+<div class="loader-bg">
+<div class="text"></div>
+</div>        
+<div class="spiner-holder-1 animate-0-25-a">
+<div class="spiner-holder-2 animate-0-25-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-25-50-a">
+<div class="spiner-holder-2 animate-25-50-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-50-75-a">
+<div class="spiner-holder-2 animate-50-75-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-75-100-a">
+<div class="spiner-holder-2 animate-75-100-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="flexbox">
+<div class="text1">NotFunny</div>
+<div class="loader">
+<div class="loader-bg">
+<div class="text"></div>
+</div>        
+<div class="spiner-holder-1 animate-0-25-a">
+<div class="spiner-holder-2 animate-0-25-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-25-50-a">
+<div class="spiner-holder-2 animate-25-50-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-50-75-a">
+<div class="spiner-holder-2 animate-50-75-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-75-100-a">
+<div class="spiner-holder-2 animate-75-100-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="flexbox">
+<div class="text1">Funny</div>
+<div class="loader">
+<div class="loader-bg">
+<div class="text"></div>
+</div>        
+<div class="spiner-holder-1 animate-0-25-a">
+<div class="spiner-holder-2 animate-0-25-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-25-50-a">
+<div class="spiner-holder-2 animate-25-50-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-50-75-a">
+<div class="spiner-holder-2 animate-50-75-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-75-100-a">
+<div class="spiner-holder-2 animate-75-100-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="flexbox">
+<div class="text1">Rofl</div>
+<div class="loader">
+<div class="loader-bg">
+<div class="text"></div>
+</div>        
+<div class="spiner-holder-1 animate-0-25-a">
+<div class="spiner-holder-2 animate-0-25-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-25-50-a">
+<div class="spiner-holder-2 animate-25-50-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-50-75-a">
+<div class="spiner-holder-2 animate-50-75-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+<div class="spiner-holder-1 animate-75-100-a">
+<div class="spiner-holder-2 animate-75-100-b">
+<div class="loader-spiner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
     </section>
     <section id="portfolio"><h1 class="centered">portfolio</h1>
     </section>
     <section id="contact"><h1 class="centered">contact</h1></section>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>

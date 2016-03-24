@@ -1,0 +1,27 @@
+@media (max-width: 900px){
+    #flex {
+    flex-wrap: wrap;
+    margin: auto;
+    }
+}
+@-webkit-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@-moz-keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+@media(max-width:900px){
+    #flexbox{
+        flex-flow:row wrap;
+        margin:auto;
+    }
+}
