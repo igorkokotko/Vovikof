@@ -37,3 +37,6 @@ h1.container{
 .centered{
     text-align:center;
 }
+#home > h2 {
+    text-align: center;
+}

@@ -19,9 +19,3 @@ load { 0% {
 stroke-dashoffset:0
 }
 }
-@media(max-width:900px){
-    #flexbox{
-        flex-flow:row wrap;
-        margin:auto;
-    }
-}
