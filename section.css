@@ -56,16 +56,20 @@ img.imageholder{
 }
 .bottomMenu {
     display: none;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    border-top: 1px solid #000;
-    background: red;
+    height: 30px;
+    border-top: 1px solid #923737;
+    background: #F1B2B2;
     z-index: 1;
+    opacity: 0.8;
 }
 .flexcircle {
     display: flex;
     justify-content: space-around;
     flex-flow:row wrap;
+}
+#portfolio .row {
+    margin: 25px;
 }
