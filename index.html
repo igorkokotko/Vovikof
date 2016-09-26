@@ -8,21 +8,13 @@
         <link rel="stylesheet" href="section.css">
         <link rel="stylesheet" href="media.css">
         <link rel="stylesheet" href="circle.css">
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script>
-            jQuery(document).ready(function(){
-            	jQuery('.skillbar').each(function(){
-            		jQuery(this).find('.skillbar-bar').animate({
-            			width:jQuery(this).attr('data-percent')
-            		},6000);
-            	});
-            });
-        $( window ).load(function() {
-            console.log( "window loaded" );
-        });
-        </script>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lightbox.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        
+        
     </head>
     <body>
     <script>
@@ -44,14 +36,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand">Vovikof</a>
+                <a href="//vovikof-igorkokotko.c9users.io/" class="navbar-brand">Vovikof</a>
             </div>
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li onclick="allhiden('home')" class="active"><a href="#home">Home</a></li>
-                    <li onclick="allhiden('profile')"><a href="#profile">Profile</a></li>
-                    <li onclick="allhiden('portfolio')"><a href="#portfolio">Portfolio</a></li>
-                    <li onclick="allhiden('contact')"><a href="#contact">Contact</a></li>
+                    <li onclick="allhiden('home')" class="active"><a href="#home">Головна</a></li>
+                    <li onclick="allhiden('profile')"><a href="#profile">Про мене</a></li>
+                    <li onclick="allhiden('portfolio')" ><a class="test1" href="#portfolio">Портфоліo</a></li>
+                    <li onclick="allhiden('contact')"><a href="#contact">Контакти</a></li>
                 </ul>
             </div>
         </nav>
@@ -60,16 +52,25 @@
             <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
         </video>-->
     
-    <section id="home"><h2>Welcome on my Web Site (c)Vovikof</h2>
+    <section id="home"><h2>Welcome on my Web Site © Vovikof</h2>
     <div id="background"></div>
-    <div class="container">
+    <div class="media-buttons">
           <a href="//www.youtube.com/" target="_blank"><button type="button" class="btn btn-danger">Youtube</button></a>
           <a href="//vk.com/vovikof" target="_blank"><button type="button" class="btn btn-info">Vkontakte</button></a>
           <a href="//www.instagram.com/" target="_blank"><button type="button" class="btn btn-primary">Instagram</button></a>
         </div>
+    <div class="pseudo-menu">
+        <a class="pseudo-menu1" onclick="allhiden('profile')" href="#profile"></a>
+        <a class="pseudo-menu2" onclick="allhiden('portfolio')" href="#portfolio"></a>
+    </div>
+ 
+    
     </section>
+    
+    <!----------------------Section Profile--------------------->
+    
     <section id="profile">
-       <h1 class="centered">profile</h1> 
+       <h1 class="centered">Про мене</h1> 
        <div id="flex">
            <div id="cf4">
                 <div class="imageholder">
@@ -126,58 +127,103 @@
             </div>
         </div>
     </div>
-    <div class="bottomMenu">(c)3Ko All Right Reserved!</div>
+    <div class="bottomMenu"><a href="//igorkokotko.github.io/ThisIS/" target="_blank">© 3Ko </a>
+    & <a href="//olexandrsayuk.github.io/final_project/" target="_blank">Olexandr Sayuk </a></div>
     </section>
-    <section id="portfolio"><h1 class="centered">portfolio</h1>
-        <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <a href="images/portfolio/first.jpg" class="thumbnail">
-                  <img src="images/portfolio/first.jpg" alt="my 1st photo">
-                </a>
+    
+     <!----------------------Section Profile End--------------------->
+     
+     <!----------------------Section Portfolio--------------------->
+     
+    <section id="portfolio"><h1 class="centered">Портфоліо</h1>
+    <div class="container">
+        <div class="gallery">
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/1.jpg" data-title="My first caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/1-thumb.jpg" class = "img-thumbnail" alt="my 1st photo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/2.jpg" data-title="My second caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/2-thumb.jpg" class = "img-thumbnail" alt="my 2nd photo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/3.jpg" data-title="My third caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/3-thumb.jpg" class = "img-thumbnail" alt="my 3rd photo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/4.jpg" data-title="My fourth caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/4-thumb.jpg" class = "img-thumbnail" alt="my 4th photo">
+                    </a>
+                </div>
             </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="images/portfolio/second.jpg" alt="my 2nd photo">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="images/portfolio/third.jpg" alt="my 3rd photo">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="images/portfolio/fourth.jpg" alt="my 4th photo">
-                </a>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/5.jpg" data-title="My fifth caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/5-thumb.jpg" class = "img-thumbnail" alt="my 5th photo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/6.jpg" data-title="My sixth caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/6-thumb.jpg" class = "img-thumbnail" alt="my 6th photo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/7.jpg" data-title="My seventh caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/7-thumb.jpg" class = "img-thumbnail" alt="my 7th photo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="images/portfolio/8.jpg" data-title="My eigth caption" data-lightbox="Vacation">
+                      <img src="images/portfolio/thumb/8-thumb.jpg" class = "img-thumbnail" alt="my 8th photo">
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <a href="images/portfolio/first.jpg" class="thumbnail">
-                  <img src="images/portfolio/fifth.jpg" alt="my 5th photo">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="images/portfolio/sixth.jpg" alt="my 6th photo">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="images/portfolio/seventh.jpg" alt="my 7th photo">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail">
-                  <img src="images/portfolio/eighth.jpg" alt="my 8th photo">
-                </a>
-            </div>
-        </div>
-    <div class="bottomMenu">(c)3Ko All Right Reserved!</div>  
+    </div>
+    <div id = "buttonflexbox">
+        <button class="restart" data-target="#lollipop">Restart</button>
+            <button type="button" class="btn btn-success">Проведено весіль 
+                <span class="badge timer" id="lollipop" data-to="21" data-speed="2500"></span>
+            </button> 
+            <button type="button" class="btn btn-primary">Корпоративів 
+                <span class="badge timer" id="lollipop" data-to="35" data-speed="2500"></span>
+            </button> 
+            <button type="button" class="btn btn-primary">Ведучий на концертах 
+                <span class="badge timer" id="lollipop" data-to="17" data-speed="2500"></span>
+            </button> 
+            <button type="button" class="btn btn-primary">Інші роботи
+                <span class="badge timer" id="lollipop" data-to="46" data-speed="2500"></span>
+            </button>
+    </div>        
+    
+    <div class="bottomMenu"><a href="//igorkokotko.github.io/ThisIS/" target="_blank">© 3Ko</a>
+     & <a href="//olexandrsayuk.github.io/final_project/" target="_blank">Olexandr Sayuk </a></div>  
     </section>
-    <section id="contact"><h1 class="centered">contact</h1>
-    <div class="bottomMenu">(c)3Ko All Right Reserved!</div>
+    
+    <!----------------------Section Portfolio End--------------------->
+    
+    <!----------------------Section Contact--------------------->
+    
+    <section id="contact"><h1 class="centered">Контакти</h1>
+    
+    
+
+
+
+
+    <div class="bottomMenu"> <a href="//igorkokotko.github.io/ThisIS/" target="_blank">© 3Ko </a>
+        & <a href="//olexandrsayuk.github.io/final_project/" target="_blank">Olexandr Sayuk </a></div>
     </section>
+    
+    <!----------------------Section Contact End--------------------->
+    
     <script src="js/main.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/countTo.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,5 +1,7 @@
 $(window).load(function() {
-	$(".loadpage").fadeOut(1500);
+	$(".loadpage").fadeOut(1000, function() {
+	    // body...
+	});
 })
 
 
@@ -16,5 +18,10 @@ $(document).scroll(function () {
         $('.bottomMenu').fadeOut();
     }
 
+});
+
+$(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
 });
 
